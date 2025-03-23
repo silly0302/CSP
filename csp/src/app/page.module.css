@@ -1,0 +1,64 @@
+.Frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  isolation: isolate;
+
+  width: auto;
+
+  height: auto;
+
+  background: #c16e6e;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.Section1 {
+  /* section1 */
+
+  width: auto;
+  height: auto;
+
+  background: #f7dddd;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  z-index: -1;
+}
+
+.Nav {
+  /* Navbar */
+
+  position: relative;
+  width: auto;
+  min-height: 70px;
+  height: auto;
+  left: 0px;
+  top: 0px;
+
+  background-color: #6e74ac;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.LeftNav {
+  /* Left Nav */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+
+  position: absolute;
+  width: 706px;
+  height: 40px;
+  left: 112px;
+  top: calc(50% - 40px / 2);
+}
