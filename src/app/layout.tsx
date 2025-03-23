@@ -4,7 +4,7 @@ export const metadata = {
   title: "김경재의 CSP",
   description: "인터넷 설계 실습",
   icons: {
-    icon: "/vercel.svg", // 퍼비콘 경로 설정 (public 폴더 내)
+    icon: "/인천대.webp", // 퍼비콘 경로 설정 (public 폴더 내)
   },
 };
 
