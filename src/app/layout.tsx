@@ -1,4 +1,5 @@
 import "./globals.css";
+import Nav from "./nav";
 
 export const metadata = {
   title: "김경재의 CSP",
@@ -16,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header>네비게이션바 위치!</header>
+        <Nav />
         {children}
       </body>
     </html>

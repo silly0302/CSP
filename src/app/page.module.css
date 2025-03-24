@@ -1,64 +1,170 @@
-.Frame {
+.page {
+  /* Page */
+
+  /* Auto layout */
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
+  padding: 0px 0px 0px;
+  isolation: isolate;
+
+  position: relative;
+  width: auto;
+  height: 3000px;
+
+  background: #ffffff;
+}
+
+.section1 {
+  /* section */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 170px;
+  gap: 40px;
   isolation: isolate;
 
   width: auto;
-
   height: auto;
+  min-height: 400px;
 
-  background: #c16e6e;
+  background: rgba(0, 0, 0, 0.6);
 
+  /* Inside auto layout */
   flex: none;
-  order: 0;
+  order: 1;
+  align-self: stretch;
   flex-grow: 0;
+  z-index: 1;
 }
 
-.Section1 {
-  /* section1 */
+.profile {
+  /* avatar */
 
-  width: auto;
-  height: auto;
+  width: 100px;
+  height: 100px;
 
-  background: #f7dddd;
+  background: rgba(217, 217, 217, 0.5);
+  border-radius: 50px;
 
   /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
-  z-index: -1;
+  z-index: 0;
 }
 
-.Nav {
-  /* Navbar */
+.section1 > .container {
+  /* container */
 
-  position: relative;
-  width: auto;
-  min-height: 70px;
-  height: auto;
-  left: 0px;
-  top: 0px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
 
-  background-color: #6e74ac;
-  font-weight: bold;
-  font-size: 20px;
+  width: 760px;
+  height: 100px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+  z-index: 1;
 }
 
-.LeftNav {
-  /* Left Nav */
+.section1 > .container > .Title {
+  /* title */
+
+  width: 760px;
+  height: 32px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.section1 > .container > .row2 {
+  /* row2 */
 
   /* Auto layout */
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0px;
-  gap: 32px;
+  gap: 6px;
 
-  position: absolute;
-  width: 706px;
-  height: 40px;
-  left: 112px;
-  top: calc(50% - 40px / 2);
+  width: 760px;
+  height: 20px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.section1 > .container > .row2 > .label {
+  /* label-normal */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 4px;
+  gap: 2px;
+  font-weight: bold;
+  color: #ffffff;
+
+  width: auto;
+  height: auto;
+
+  background: rgba(217, 217, 217, 0.5);
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.section1 > .container > .row3 {
+  /* row3 */
+
+  width: 760px;
+  height: 24px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
 }

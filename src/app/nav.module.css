@@ -1,0 +1,92 @@
+.nav {
+  /* Top Bar */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+
+  position: fixed;
+  width: auto;
+  height: auto;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  transition: background-color 0.3s ease;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  z-index: 1;
+}
+
+.Title {
+  /* title */
+
+  width: auto;
+  height: auto;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  /* identical to box height, or 129% */
+
+  color: #000000;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+}
+
+.navigation {
+  /* title */
+
+  width: auto;
+  height: auto;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  /* identical to box height, or 129% */
+
+  color: #000000;
+
+  /* Inside auto layout */
+  flex: auto;
+  display: flex;
+
+  order: 1;
+  flex-grow: 1;
+}
+
+.navigatoin > .Title {
+  /* tab */
+
+  width: auto;
+  height: auto;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: auto;
+  line-height: 24px;
+
+  /* identical to box height, or 150% */
+
+  color: #000000;
+
+  /* Inside auto layout */
+  flex: none;
+  justify-content: flex-start;
+  align-items: center;
+  order: 0;
+  flex-grow: 0;
+}
